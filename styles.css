@@ -28,6 +28,7 @@ a{color:inherit;text-decoration:none}
 .brand span{font-family:var(--display);font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase}
 .brand span b{color:var(--gold);font-weight:400}
 .links{display:flex;gap:4px;align-items:center;list-style:none}
+.brand span,.links a{white-space:nowrap}
 .links a{font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;border-radius:999px;color:#e9e6df;transition:color .2s,background .2s}
 .links a:hover{color:var(--gold)}
 .links a.active{color:var(--gold)}
@@ -40,7 +41,7 @@ a{color:inherit;text-decoration:none}
 .nav.open .burger span::before{top:0;transform:rotate(45deg)}
 .nav.open .burger span::after{top:0;transform:rotate(-45deg)}
 
-@media (max-width:900px){
+@media (max-width:1060px){
   .burger{display:block}
   .links{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:rgba(14,15,17,.97);
     padding:8px 16px 20px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:.25s}
